@@ -78,14 +78,13 @@ a {
   align-items: center;
   justify-content: center;
   color: var(--bg-color);
-  padding: 150px;
+  /* padding: 150px; */
   text-align: justify;
 }
 
 .header-title h1{
   font-style: italic;
-  font-size: 4rem;
-  line-height: 1;
+  font-size: 3rem;
 }
 
 
@@ -208,4 +207,22 @@ footer{
 footer div{
   text-align:center;
   font-size: 1rem;
+}
+
+
+@media (max-width: 425px){
+  .header-nav{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+  }
+  .header-title h1{
+    font-style: italic;
+    font-size: 2.5rem;
+  }
+  .header-title h2{
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
 }
